@@ -14,13 +14,16 @@ function countBs(string, char) {
 
 function countChar(string, char) {
   let counter = 0;
+  let stringConverted = string.toLowerCase();
+  let charConverted = char.toLowerCase();
 // Looping for each character inside of the given string and if it finds the given char, counter adds up.
   for (let i = 0; i < string.length; i++) {
-    if (string[i].toUpperCase() === char) {
+    if (stringConverted[i] === charConverted) {
       counter++;
     }
   }
   return counter;    // Returns the number of the given char which is inside the string.
 }
 
+console.log(countBs('jacobiBB', 'b'));
 console.log(countBs('jacobiBB', 'B'));
