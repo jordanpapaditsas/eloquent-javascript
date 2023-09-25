@@ -24,3 +24,5 @@ function isEven(n) {
 console.log(isEven(-1));
 console.log(isEven(50));
 console.log(isEven(75));
+console.log(isEven(0);
+console.log(isEven(1);
